@@ -1,17 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 h1 {
-    font-family: 'Rubik', sans-serif;
+    font-family: $rubik;
     font-size: 8rem;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
+li, a {
     text-decoration: none;
+    font-size: $p;
+}
+
+body {
+    margin: 0;
 }

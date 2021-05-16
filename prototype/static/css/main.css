@@ -1,23 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 8rem;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
+li, a {
   text-decoration: none;
+  font-size: 1.125rem;
+}
+
+body {
+  margin: 0;
 }
 
 .header {
-  width: 100vw;
-  background-color: #FF0400;
+  display: flex;
+  background-color: #FFF;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.375rem 10%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.logo img {
+  width: 5rem;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 2rem;
+}
+
+.nav-links li a {
+  font-family: "Karla", sans-serif;
+  color: #1A1A1A;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #FF0400;
 }
 /*# sourceMappingURL=main.css.map */
