@@ -123,11 +123,75 @@
 }
 
 .shapes-layer {
-  position: absolute;
+  display: none;
 }
 
-.shapes-layer .greentriangle {
-  z-index: 5;
+@media (min-width: 1200px) {
+  .shapes-layer {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+  }
+  .shapes-layer .shape {
+    position: absolute;
+  }
+  .shapes-layer .greentriangle {
+    left: 20%;
+    top: 5vh;
+  }
+  .shapes-layer .purpleline {
+    left: 3%;
+    top: 15vh;
+  }
+  .shapes-layer .yellowsqrhole {
+    left: 30%;
+    top: 25vh;
+  }
+  .shapes-layer .redsmallhex {
+    left: 2%;
+    top: 34vh;
+  }
+  .shapes-layer .largegreencircle {
+    left: 12%;
+    top: 55vh;
+  }
+  .shapes-layer .blueline {
+    left: 30%;
+    top: 70vh;
+  }
+  .shapes-layer .greencirclehollow {
+    left: 4%;
+    top: 85vh;
+  }
+  .shapes-layer .purplecircle {
+    left: 70%;
+    top: 7vh;
+  }
+  .shapes-layer .yellowline {
+    left: 75%;
+    top: 35vh;
+  }
+  .shapes-layer .tinygreencircle {
+    left: 64%;
+    top: 40vh;
+  }
+  .shapes-layer .bluetri {
+    left: 78%;
+    top: 50vh;
+  }
+  .shapes-layer .greenline {
+    left: 62%;
+    top: 65vh;
+  }
+  .shapes-layer .largeredhex {
+    left: 75%;
+    top: 70vh;
+  }
+  .shapes-layer .smallyellowsqr {
+    left: 90%;
+    top: 80vh;
+  }
 }
 
 .testimonials-content {
@@ -157,6 +221,8 @@
 @media (max-width: 1200px) {
   .slides {
     flex-direction: column;
+    margin-top: .5rem;
+    padding: 0 5rem;
   }
 }
 
@@ -178,7 +244,7 @@
 }
 
 .slides-card .profile-card {
-  width: auto;
+  width: 100%;
   height: auto;
   display: flex;
   margin-top: 1rem;
@@ -208,14 +274,26 @@
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .slides-card .quote-card {
+    padding: 5%;
+  }
+}
+
 .btn-whttogold {
   background-color: transparent;
   color: #FFF;
   border: 2px solid #FFF;
-  margin-top: 10rem;
+  margin-top: 2rem;
   box-shadow: 0 0.25rem 1rem rgba(26, 26, 26, 0.35);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .btn-whttogold {
+    margin-top: 2rem;
+  }
 }
 
 .btn-whttogold:hover {

@@ -123,9 +123,74 @@
 }
 
 .shapes-layer {
-    position: absolute;
-    .greentriangle {
-        z-index: 5;
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .shapes-layer {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        .shape {
+            position: absolute;
+        }
+        .greentriangle {
+            left: 20%;
+            top: 5vh;
+        }
+        .purpleline {
+            left: 3%;
+            top: 15vh;
+        }
+        .yellowsqrhole {
+            left: 30%;
+            top: 25vh;
+        }
+        .redsmallhex {
+            left: 2%;
+            top: 34vh;
+        }
+        .largegreencircle {
+            left: 12%;
+            top: 55vh;
+        }
+        .blueline {
+            left: 30%;
+            top: 70vh;
+        }
+        .greencirclehollow {
+            left: 4%;
+            top: 85vh;
+        }
+        .purplecircle {
+            left: 70%;
+            top: 7vh;
+        }
+        .yellowline {
+            left: 75%;
+            top: 35vh;
+        }
+        .tinygreencircle {
+            left: 64%;
+            top: 40vh;
+        }
+        .bluetri {
+            left: 78%;
+            top: 50vh;
+        }
+        .greenline {
+            left: 62%;
+            top: 65vh;
+        }
+        .largeredhex {
+            left: 75%;
+            top: 70vh;
+        }
+        .smallyellowsqr {
+            left: 90%;
+            top: 80vh;
+        }
     }
 }
 
@@ -156,6 +221,8 @@
 @media (max-width: 1200px) {
     .slides {
         flex-direction: column;
+        margin-top: .5rem;
+        padding: 0 5rem;
     }
 }
 
@@ -176,7 +243,7 @@
     }
 
     .profile-card {
-        width: auto;
+        width: 100%;
         height: auto;
         display: flex;
         margin-top: 1rem;
@@ -200,16 +267,28 @@
             }
         }
     }
+
+    @media (max-width: 1200px) {
+        .quote-card {
+            padding: 5%;
+        }
+    }
 }
 
 .btn-whttogold {
     background-color: transparent;
     color: $white;
     border: 2px solid $white;
-    margin-top: 10rem;
+    margin-top: 2rem;
     box-shadow: 0 0.25rem 1rem rgba(26, 26, 26, 0.35);
     transition: all 0.3s ease 0s;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .btn-whttogold {
+        margin-top: 2rem;
+    }
 }
 
 .btn-whttogold:hover {
