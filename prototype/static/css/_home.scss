@@ -64,6 +64,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+    .mission {
+        flex-direction: row;
+    }
 }
 
 .mission-left {
@@ -74,7 +81,7 @@
 }
 
 .btn-blktored {
-    background-color: none;
+    background-color: transparent;
     color: $black;
     border: 2px solid $black;
     margin-top: 2.5rem;
@@ -96,20 +103,10 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 900px) {
-    .mission-right img {
-        width: 80vw;
-    }
-}
-
 .testimonials {
     position: relative;
     width: auto;
     height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
 }
 
 .testimonials::before {
@@ -125,10 +122,21 @@
     background-position: center center;
 }
 
+.shapes-layer {
+    position: absolute;
+    .greentriangle {
+        z-index: 5;
+    }
+}
+
 .testimonials-content {
     position: relative;
     color: $white;
     text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .testimonials-top {
@@ -140,54 +148,74 @@
     width: auto;
     margin-top: 1.25rem;
     padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-@media (min-width: 961px) {
+@media (max-width: 1200px) {
     .slides {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: column;
     }
 }
 
 .slides-card {
-    width: auto;
-    height: auto;
-    background: linear-gradient(90deg, rgba(32, 32, 32, 0.75) 0%, rgba(30, 30, 30, 0.75) 100%);
-    border-radius: 2.5rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
+    flex-direction: column;
     flex-basis: 30%;
 
-    .left-side {
-        flex: 1;
-        padding: 2rem;
+    .quote-card {
+        width: auto;
+        height: auto;
+        padding: 8%;
+        background: linear-gradient(90deg, rgba(32, 32, 32, 0.75) 0%, rgba(30, 30, 30, 0.75) 100%);
+        border-radius: 1rem;
         text-align: left;
-        img {
-            width: 70%;
-            height: auto;
-            border-radius: 1rem;
-        }
     }
 
-    .right-side {
-        color: $white;
-        text-align: left;
-        flex: 2;
+    .profile-card {
+        width: auto;
+        height: auto;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .name {
-            text-transform: uppercase;
+        margin-top: 1rem;
+        text-align: left;
+        .profile-card-img {
+            flex: 1;
+            img {
+                width: 5vw;
+            }
         }
-        .role {
-            margin-top: 1rem;
-        }
-        .quote {
-            margin-top: 2.5rem;
-            padding-right: 4rem;
+        .profile-card-info {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            .name {
+                text-transform: uppercase;
+                h4 {
+                    font-weight: 700;
+                }
+            }
         }
     }
+}
+
+.btn-whttogold {
+    background-color: transparent;
+    color: $white;
+    border: 2px solid $white;
+    margin-top: 10rem;
+    box-shadow: 0 0.25rem 1rem rgba(26, 26, 26, 0.35);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.btn-whttogold:hover {
+    color: $yellow;
+    border: 2px solid $yellow;
+    box-shadow: 0 0.25rem 1rem rgba(255, 199, 0, 0.35);
 }
 
 .clubs {

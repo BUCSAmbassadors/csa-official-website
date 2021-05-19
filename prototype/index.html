@@ -58,60 +58,82 @@
     </section>
 
     <section class="testimonials">
+        <div class="shapes-layer">
+            <div class="greentriangle">
+                <img src="/images/greentriangle.png" alt="green triangle">
+            </div>
+        </div>
         <div class="testimonials-content">
             <div class="testimonials-top">
                 <h2>Our community</h2>
             </div>
             <div class="slides">
-                <div class="slides-card">
-                    <div class="left-side">
-                        <img src="/images/home_testimonial1.png" alt="testimonial 1">
-                    </div>
-                    <div class="right-side">
-                        <div class="name">
-                            <h3>Rhett</h3>
-                        </div>
-                        <div class="role">
-                            <h5><b>Mentor, Computer Science '22</b></h5>
-                        </div>
+                <div class="slides-card card1">
+                    <div class="quote-card">
                         <div class="quote">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit porttitor suspendisse eget odio. Sit ut imperdiet dictum senectus feugiat sit auctor at. Aliquam non eleifend penatibus praesent viverra elementum at lectus. Nisi, consectetur mi rutrum sagittis."</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-img">
+                            <img src="/images/home_testimonial1.png" alt="testimonial 1">
+                        </div>
+                        <div class="profile-card-info">
+                            <div class="name">
+                                <h4>Rhett</h4>
+                            </div>
+                            <div class="role">
+                                <h5>Mentor, Computer Science '22</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="slides-card">
-                    <div class="left-side">
-                        <img src="/images/home_testimonial2.png" alt="testimonial 2">
-                    </div>
-                    <div class="right-side">
-                        <div class="name">
-                            <h3>Insert Name</h3>
-                        </div>
-                        <div class="role">
-                            <h5><b>Mentee, Computer Science '24</b></h5>
-                        </div>
+
+                <div class="slides-card card2">
+                    <div class="quote-card">
                         <div class="quote">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit porttitor suspendisse eget odio. Sit ut imperdiet dictum senectus feugiat sit auctor at. Aliquam non eleifend penatibus praesent viverra elementum at lectus. Nisi, consectetur mi rutrum sagittis."</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-img">
+                            <img src="/images/home_testimonial2.png" alt="testimonial 2">
+                        </div>
+                        <div class="profile-card-info">
+                            <div class="name">
+                                <h4>Insert Name</h4>
+                            </div>
+                            <div class="role">
+                                <h5>Mentee, Computer Science '24</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="slides-card">
-                    <div class="left-side">
-                        <img src="/images/home_testimonial3.png" alt="testimonial 3">
-                    </div>
-                    <div class="right-side">
-                        <div class="name">
-                            <h3>Insert Name</h3>
-                        </div>
-                        <div class="role">
-                            <h5><b>Mentor, Computer Science '23</b></h5>
-                        </div>
+
+                <div class="slides-card card3">
+                    <div class="quote-card">
                         <div class="quote">
                             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit porttitor suspendisse eget odio. Sit ut imperdiet dictum senectus feugiat sit auctor at. Aliquam non eleifend penatibus praesent viverra elementum at lectus. Nisi, consectetur mi rutrum sagittis."</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <div class="profile-card-img">
+                            <img src="/images/home_testimonial3.png" alt="testimonial 3">
+                        </div>
+                        <div class="profile-card-info">
+                            <div class="name">
+                                <h4>Insert Name</h4>
+                            </div>
+                            <div class="role">
+                                <h5>Mentor, Computer Science '23</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button type="button" class="btn-whttogold" onclick="location.href='ambassadors.html'">
+                Learn More
+            </button>
         </div>
     </section>
 
@@ -120,5 +142,12 @@
 
         </div>
     </section>
+
+    <script src="/prototype/static/js/rellax.min.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', {
+            center: true
+        });
+    </script>
 </body>
 </html>
