@@ -102,10 +102,132 @@
   }
 }
 
+.testimonials {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1A;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.testimonials-content {
+  position: relative;
+  color: #FFF;
+  text-align: center;
+}
+
+.testimonials-top {
+  padding: 3%;
+}
+
+.slides {
+  position: relative;
+  width: auto;
+  margin-top: 1.25rem;
+  padding: 0 10rem;
+}
+
+@media (min-width: 961px) {
+  .slides {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.slides-card {
+  width: auto;
+  height: auto;
+  background: linear-gradient(90deg, rgba(32, 32, 32, 0.75) 0%, rgba(30, 30, 30, 0.75) 100%);
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-basis: 30%;
+}
+
+.slides-card .left-side {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+.slides-card .left-side img {
+  width: 70%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.slides-card .right-side {
+  color: #FFF;
+  text-align: left;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slides-card .right-side .name {
+  text-transform: uppercase;
+}
+
+.slides-card .right-side .role {
+  margin-top: 1rem;
+}
+
+.slides-card .right-side .quote {
+  margin-top: 2.5rem;
+  padding-right: 4rem;
+}
+
+.clubs {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clubs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.clubs-content {
+  position: relative;
+  color: #1A1A1A;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  min-width: 0;
+  min-height: 0;
 }
 
 h1 {
@@ -128,7 +250,7 @@ h2 {
 
 h3 {
   font-family: "Karla", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
@@ -159,7 +281,7 @@ button, button:hover {
   font-family: "Karla", sans-serif;
   border-radius: 3rem;
   padding: 1.6875rem 3rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 

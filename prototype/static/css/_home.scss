@@ -101,3 +101,119 @@
         width: 80vw;
     }
 }
+
+.testimonials {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.testimonials-content {
+    position: relative;
+    color: $white;
+    text-align: center;
+}
+
+.testimonials-top {
+    padding: 3%;
+}
+
+.slides {
+    position: relative;
+    width: auto;
+    margin-top: 1.25rem;
+    padding: 0 10rem;
+}
+
+@media (min-width: 961px) {
+    .slides {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.slides-card {
+    width: auto;
+    height: auto;
+    background: linear-gradient(90deg, rgba(32, 32, 32, 0.75) 0%, rgba(30, 30, 30, 0.75) 100%);
+    border-radius: 2.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-basis: 30%;
+
+    .left-side {
+        flex: 1;
+        padding: 2rem;
+        text-align: left;
+        img {
+            width: 70%;
+            height: auto;
+            border-radius: 1rem;
+        }
+    }
+
+    .right-side {
+        color: $white;
+        text-align: left;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .name {
+            text-transform: uppercase;
+        }
+        .role {
+            margin-top: 1rem;
+        }
+        .quote {
+            margin-top: 2.5rem;
+            padding-right: 4rem;
+        }
+    }
+}
+
+.clubs {
+    position: relative;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clubs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.clubs-content {
+    position: relative;
+    color: $black;
+    text-align: center;
+}
