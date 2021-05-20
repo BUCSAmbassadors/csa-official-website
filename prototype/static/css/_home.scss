@@ -58,8 +58,7 @@
 .mission {
     position: relative;
     width: auto;
-    // height: 52.5rem;
-    padding: 0 10rem;
+    padding: 0 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +100,14 @@
     flex: 6;
     box-sizing: border-box;
     text-align: center;
+}
+
+@media (max-width: 750px) {
+    .mission-right {
+        img {
+            width: 200px;
+        }
+    }
 }
 
 .testimonials {
@@ -304,6 +311,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    padding: 2rem;
 }
 
 .clubs::before {
@@ -319,8 +328,57 @@
     background-position: center center;
 }
 
-.clubs-content {
+.clubs-left {
+    flex: 1;
     position: relative;
     color: $black;
-    text-align: center;
+}
+
+.clubs-right {
+    flex: 1;
+    position: relative;
+    color: $black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .club-card {
+        width: 20rem;
+        height: auto;
+        background: linear-gradient(136.5deg, #FBFBFB 0%, #F5F5F5 100%);
+        box-shadow: 0px 4px 15px rgba(193, 193, 193, 0.35);
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+
+        .club-card-top {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            
+            .icon-back {
+                width: 4rem;
+                height: 4rem;
+                background-color: $red;
+                padding: 4px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .iconify {
+                    color: $white;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .clubs-right {
+        display: none;
+    }
 }
