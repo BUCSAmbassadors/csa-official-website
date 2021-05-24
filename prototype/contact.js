@@ -5,18 +5,23 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const router = express.Router();
 const { getMaxListeners } = require('process');
 
 const app = express();
 
 // View engine setup
 // https://stackoverflow.com/questions/53232923/handlebars-no-such-file-or-directory
-app.engine('handlebars', exphbs({
-    extname: 'handlebars',
-    defaultLayout: 'index',
-    layoutsDir: ''
-}));
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', exphbs({
+//     extname: 'handlebars',
+//     defaultLayout: 'main',
+//     layoutsDir: ''
+// }));
+// app.set('view engine', 'handlebars');
+
+app.set('views', __dirname + '/views');
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
 
 // Body parser middleware
 // https://github.com/expressjs/body-parser
@@ -27,8 +32,34 @@ app.use(bodyParser.json());
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.get('/', (req, res) => {
-    res.render('contactus');
+    res.render(path.join(__dirname, '/views/index.html'));
 });
+
+app.get('/index.html', (req, res) => {
+    res.render(path.join(__dirname, '/views/index.html'));
+});
+
+app.get('/about.html', function(req,res) {
+    res.render(__dirname+'/views/about.html');
+});
+
+app.get('/ambassadors.html', function(req,res) {
+    res.render(__dirname+'/views/ambassadors.html');
+});
+
+app.get('/mentor.html', function(req,res) {
+    res.render(__dirname+'/views/mentor.html');
+});
+
+app.get('/resources.html', function(req,res) {
+    res.render(__dirname+'/views/resources.html');
+});
+
+app.get('/contactus.html', function(req,res) {
+    res.render(__dirname+'/views/contactus.html');
+});
+
+app.use('/', router);
 
 app.post('/send', (req, res) => {
     const output = `
@@ -74,7 +105,7 @@ app.post('/send', (req, res) => {
         console.log("Message sent: %s", info.messageId);
         console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-        res.render('contactus', {msg:'Email has been sent'});
+        res.render('contactus.html', {msg:'Email has been sent'});
     });
 });
 
