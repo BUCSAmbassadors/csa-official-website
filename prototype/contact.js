@@ -2,7 +2,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const exphbs = require('express-handlebars');
+// const exphbs = require('express-handlebars');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const router = express.Router();
@@ -11,14 +11,8 @@ const { getMaxListeners } = require('process');
 const app = express();
 
 // View engine setup
-// https://stackoverflow.com/questions/53232923/handlebars-no-such-file-or-directory
-// app.engine('handlebars', exphbs({
-//     extname: 'handlebars',
-//     defaultLayout: 'main',
-//     layoutsDir: ''
-// }));
-// app.set('view engine', 'handlebars');
 
+// https://stackoverflow.com/questions/4529586/render-basic-html-view
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
@@ -57,6 +51,10 @@ app.get('/resources.html', function(req,res) {
 
 app.get('/contactus.html', function(req,res) {
     res.render(__dirname+'/views/contactus.html');
+});
+
+app.get('/sent.html', function(req,res) {
+    res.render(__dirname+'/views/sent.html');
 });
 
 app.use('/', router);
@@ -105,7 +103,7 @@ app.post('/send', (req, res) => {
         console.log("Message sent: %s", info.messageId);
         console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-        res.render('contactus.html', {msg:'Email has been sent'});
+        res.render('sent.html');
     });
 });
 
