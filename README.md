@@ -14,7 +14,7 @@ The vision for the plan was to keep the userflow simple, yet engaging. Pulling f
 
 This website is an HTML/SCSS/JS website that utilizes a Node.js/Express.js back-end for server-side processes. Be sure to download Node and npm ([found here](https://nodejs.org/en/)). Rellax.js was used for the parallax effect. Most of the mobile responsiveness of the website uses flexbox and the Contact Us page uses Grid CSS. Nodemailer is used for the contact form.
 
-## The Design
+## The Design (and more Tech)
 
 ### Home Page
 
@@ -45,6 +45,10 @@ The contact page is really just a contact card using Grid CSS. You have your con
 ```terminal
 npm install --save express body-parser express-handlebars nodemailer
 ```
+
+Tutorial found [here](https://www.youtube.com/watch?v=nF9g1825mwk).
+
+*Another Note: you will need to find your SMTP Server for your specific gmail. I used my test email. Definitely switch to BUCS Ambassador's. I just Googled "how to get smtp code from gmail". The video tutorial above talks about it.
 
 ### Figma File
 
