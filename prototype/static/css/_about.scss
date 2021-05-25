@@ -1,0 +1,178 @@
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    background-image: url(/static/images/about-hero.png);
+    background-color: $white;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* simple parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-aboutus {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-color: $white;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.about-aboutus-mission {
+    display: block;
+    text-align: center;
+    padding: 5rem 15rem;
+}
+
+.about-aboutus-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5rem 8rem;
+    flex-direction: row;
+    gap: 7rem;
+}
+
+@media (max-width: 1200px) {
+    .about-aboutus {
+        height: 100vh;
+    }
+    .about-aboutus-mission {
+        padding: 2rem;
+    }
+    .about-aboutus-stats {
+        display: block;
+        padding: 2rem;
+    }
+    .about-stat {
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-aboutus-mission {
+        h5 {
+            font-size: $p;
+        }
+    }
+    .about-aboutus-stats {
+        padding: 0.5rem;
+    }
+}
+
+.about-ours {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: $black;
+    padding: 4rem;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-ours-quarter {
+    flex: 1;
+    text-align: center;
+    margin: 2rem;
+    min-width: 600px;
+
+    a {
+        color: $white;
+        :visited {
+            color: $white;
+        }    
+    }
+}
+
+@media (max-width: 1460px) {
+    .about-ours {
+        justify-content: center;
+        align-items: center;
+        h2 {
+            font-size: $h3;
+        }
+        h5 {
+            font-size: $p;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about-ours {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+    .about-ours-quarter {
+        min-width: 100%;
+    }
+}
+
+.about-events {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    padding: 4rem;
+    color: $black;
+}
+
+.about-events-series {
+    padding: 4rem 0;
+}
+
+.series-event {
+    display: flex;
+    flex-direction: row;
+    img {
+        width: 500px;
+    }
+}
+
+.series-event:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+.event-img {
+    flex: 2;
+}
+
+.event-descriptions {
+    flex: 3;
+}
+
+@media (max-width: 1400px) {
+    .series-event {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .series-event {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+.rightaligned {
+    text-align: right;
+}

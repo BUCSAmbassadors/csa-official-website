@@ -77,20 +77,20 @@ app.post('/send', (req, res) => {
         port: 587, // 465 is ssl, 587 is tls
         secure: false, // true for 465, false for other ports
         auth: {
-            user: '', // my test gmail (sender)
-            pass: '', // my test gmail password temporary (sender)
+            user: 'testrunnin@gmail.com', // my test gmail (sender)
+            pass: 'runninginthe90s', // my test gmail password temporary (sender)
             // make sure on gmail security to allow less secure app access
             // https://stackoverflow.com/questions/16512592/login-credentials-not-working-with-gmail-smtp
         },
         tls:{
-            rejectUnauthorized: false
+            rejectUnauthorized: false // allows me to send email while hosting via localhost
         }
     });
 
     // send mail with defined transport object
     let mailInfo = {
         from: '"Nodemailer Contact" <testrunnin@gmail.com>', // sender address
-        to: "", // receiver -- set this to bucsa's email lol
+        to: "andyvo@bu.edu", // receiver -- set this to bucsa's email lol
         subject: "Node Contact Request", // Subject line
         text: "Hello world", // plain text body -- useless lol
         html: output // html body -- from above
@@ -103,7 +103,7 @@ app.post('/send', (req, res) => {
         console.log("Message sent: %s", info.messageId);
         console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 
-        res.render('sent.html');
+        res.render('sent.html'); // where /send goes to
     });
 });
 
