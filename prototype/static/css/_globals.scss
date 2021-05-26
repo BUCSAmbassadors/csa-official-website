@@ -6,6 +6,10 @@
     min-height: 0;
 }
 
+body {
+    word-wrap: break-word;
+}
+
 h1 {
     font-family: $rubik;
     font-size: $h1;

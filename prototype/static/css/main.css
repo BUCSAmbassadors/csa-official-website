@@ -113,7 +113,7 @@
 .testimonials {
   position: relative;
   width: auto;
-  height: 100vh;
+  height: auto;
 }
 
 .testimonials::before {
@@ -127,6 +127,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  word-wrap: normal;
 }
 
 .shapes-layer {
@@ -212,6 +213,7 @@
 }
 
 .testimonials-top {
+  margin-top: 4rem;
   padding: 3%;
 }
 
@@ -250,7 +252,7 @@
   text-align: left;
 }
 
-.slides-card .profile-card {
+.slides-card .card-profile {
   width: 100%;
   height: auto;
   display: flex;
@@ -258,26 +260,26 @@
   text-align: left;
 }
 
-.slides-card .profile-card .profile-card-img {
+.slides-card .card-profile .card-profile-img {
   flex: 1;
 }
 
-.slides-card .profile-card .profile-card-img img {
+.slides-card .card-profile .card-profile-img img {
   width: 5vw;
 }
 
-.slides-card .profile-card .profile-card-info {
+.slides-card .card-profile .card-profile-info {
   flex: 3;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.slides-card .profile-card .profile-card-info .name {
+.slides-card .card-profile .card-profile-info .name {
   text-transform: uppercase;
 }
 
-.slides-card .profile-card .profile-card-info .name h4 {
+.slides-card .card-profile .card-profile-info .name h4 {
   font-weight: 700;
 }
 
@@ -295,6 +297,7 @@
   box-shadow: 0 0.25rem 1rem rgba(26, 26, 26, 0.35);
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  margin-bottom: 8rem;
 }
 
 @media (max-width: 1200px) {
@@ -703,12 +706,20 @@ iframe {
   flex-direction: row;
 }
 
+.ambassadors img {
+  min-width: 400px;
+  max-width: 680px;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 1000px) {
   .ambassadors {
     flex-direction: column;
   }
-  .ambassadors .ambassadors-landing-right {
-    display: none;
+  .ambassadors img {
+    min-width: 300px;
+    max-width: 400px;
   }
 }
 
@@ -719,11 +730,6 @@ iframe {
 
 .ambassadors-landing-right {
   flex: 1;
-}
-
-.ambassadors-landing-right img {
-  width: 100%;
-  height: auto;
 }
 
 .ambassadors-profiles {
@@ -753,6 +759,8 @@ iframe {
   height: auto;
   transition: all 0.3s ease 0s;
   border-radius: 2rem;
+  min-width: 150px;
+  max-width: 400px;
 }
 
 .profile-card img:hover {
@@ -772,6 +780,28 @@ iframe {
 .ambassadors-board-right {
   color: #1A1A1A;
   flex: 1;
+}
+
+@media (max-width: 800px) {
+  .profile-card {
+    width: 75%;
+  }
+  .profile-card h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .ambassadors-profiles {
+    flex-direction: column;
+  }
+  .profile-card {
+    width: 75%;
+    margin: 1rem;
+  }
+  .profile-card h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .resources-landing {
@@ -905,9 +935,75 @@ iframe {
 }
 
 @media (max-width: 700px) {
-  body h2 {
+  .resources-landing h2, .resources-events h2, .resources-jobs h2 {
     font-size: 3rem;
   }
+}
+
+.resources-jobs {
+  padding: 5rem;
+}
+
+.jobs-text {
+  text-align: right;
+}
+
+.jobs-list ul {
+  padding: 2rem;
+}
+
+.jobs-list ul li {
+  list-style: none;
+}
+
+.jobs-list ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.jobs-list a {
+  color: #1A1A1A;
+  transition: all ease 300ms;
+}
+
+.jobs-list a:hover, .jobs-list a:focus {
+  color: #FF0400;
+  text-decoration: underline;
+}
+
+.resources-links-header {
+  padding: 5rem 5rem 2rem 5rem;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  border-bottom: 3px solid #1A1A1A;
+}
+
+.resources-link-section {
+  padding: 2rem 5rem;
+}
+
+.resources-link-section a {
+  color: #1A1A1A;
+  transition: all ease 300ms;
+}
+
+.resources-link-section a .iconify {
+  color: #1A1A1A;
+  padding-top: 8px;
+  display: inline;
+  font-size: 2rem;
+  transition: all ease 300ms;
+}
+
+.resources-link-section a:hover, .resources-link-section a:focus {
+  color: #FF0400;
+}
+
+.resources-link-section a:hover .iconify, .resources-link-section a:focus .iconify {
+  color: #FF0400;
 }
 
 .contact {
@@ -1130,6 +1226,10 @@ ul.contact-socials .iconify {
   min-height: 0;
 }
 
+body {
+  word-wrap: break-word;
+}
+
 h1 {
   font-family: "Rubik", sans-serif;
   font-size: 8rem;
@@ -1241,6 +1341,7 @@ footer {
 footer a {
   text-decoration: none;
   color: #FFF;
+  transition: all ease 300ms;
 }
 
 footer a:visited {
@@ -1248,7 +1349,7 @@ footer a:visited {
   color: #FFF;
 }
 
-footer a:hover {
+footer a:hover, footer a:focus {
   color: #FF0400;
   text-decoration: underline;
 }

@@ -11,13 +11,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    img {
+        min-width: 400px;
+        max-width: 680px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 1000px) {
     .ambassadors {
         flex-direction: column;
-        .ambassadors-landing-right {
-            display: none;
+        img {
+            min-width: 300px;
+            max-width: 400px;
         }
     }
 }
@@ -29,10 +36,6 @@
 
 .ambassadors-landing-right {
     flex: 1;
-    img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 .ambassadors-profiles {
@@ -60,6 +63,8 @@
         height: auto;
         transition: all 0.3s ease 0s;
         border-radius: 2rem;
+        min-width: 150px;
+        max-width: 400px;
     }
     img:hover {
         transform: scale(1.05);
@@ -78,4 +83,26 @@
 .ambassadors-board-right {
     color: $black;
     flex: 1;
+}
+
+@media (max-width: 800px) {
+    .profile-card {
+        width: 75%;
+        h3 {
+            font-size: $h4;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .ambassadors-profiles {
+        flex-direction: column;
+    }
+    .profile-card {
+        width: 75%;
+        margin: 1rem;
+        h3 {
+            font-size: $h5;
+        }
+    }
 }
