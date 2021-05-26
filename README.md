@@ -16,7 +16,7 @@ This website is an HTML/SCSS/JS website that utilizes a Node.js/Express.js back-
 
 ## The Design (and more Tech)
 
-Colorful, mobile-responsive, and interactive!
+Colorful, mobile-responsive, and interactive! Assuming the page url is bucsambassadors.bu.edu, I've made a social media bar to allow users to share the link to their Facebook, Twitter, and email!
 
 ### Home Page
 
