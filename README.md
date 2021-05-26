@@ -28,6 +28,14 @@ At the bottom of this page is a mailing list that links to my test email's mailc
 npm install --save express body-parser request
 ```
 
+To read stuff from the .env file, be sure to install the dotenv package.
+
+```terminal
+npm install dotenv
+```
+
+Be sure to check your Mailchimp's data center as well as list_id and API key. Instructions are found in the comments of contact.js (with a YouTube tutorial in the appropriate section).
+
 ### Mentor Page
 
 This page is simply a way for users to learn a little bit more about the mentorship program. Given the limited information, I tried to market it as best as I could.
