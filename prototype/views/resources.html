@@ -31,6 +31,103 @@
         </nav>
     </header>
 
+    <section class="resources-landing">
+        <div class="resources-landing-left">
+            <h2>Resources</h2>
+            <h4>We got all of your BU CS resources right here - a scroll and click away!</h4>
+        </div>
+        <div class="resources-landing-right">
+            <img src="/static/images/resources-landing.svg" alt="Resources">
+        </div>
+    </section>
+
+    <section class="resources-events">
+        <div class="events-header">
+            <h2>Upcoming Events</h2>
+            <br>
+            <br>
+            <p>Pull out your calendars because we got some exciting upcoming events for you!</p>
+        </div>
+        <div class="resources-calendar">
+            <!-- Unfortunately, Google Calendar API was being a nuisance so I figured I'd hardcode in the UI for showing next 3 (or 5 up to y'all) upcoming events -->
+            <!-- Obv someone is going to have to check up on this -->
+            <div class="calendar-event">
+                <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NXVhcmFlaG12aTE3ZnI2N21hMzl1MjRvN2EgaTdxZGpvbGZibjRtOTlzMmFic2JsMTJqOGtAZw&amp;tmsrc=i7qdjolfbn4m99s2absbl12j8k%40group.calendar.google.com">
+                    <div class="calendar-event-add-icon">
+                        <span class="iconify" data-inline="false" data-icon="mdi:calendar"></span>
+                        <span class="icon-text">
+                            <p><b>Add to Calendar</b></p>
+                        </span>
+                    </div>
+                </a>
+                <div class="event-contents">
+                    <img src="/static/images/resources-event-resume.svg" alt="Resume Workshop">
+                    <br>
+                    <br>
+                    <h4>Test Event 1</h4>
+                    <br>
+                    <div class="event-logistics">
+                        <p><span class="iconify" data-inline="false" data-icon="mdi:clock-time-eight"></span>12:00 PM EST</p>
+                        <p><span class="iconify" data-inline="false" data-icon="mdi:map-marker"></span>CAS 224</p>
+                    </div>
+                    <br>
+                    <p>Description of Resume Workshop</p>
+                </div>
+            </div>
+            <div class="calendar-event">
+                <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NTdic24wbDNxNHIycnQ2c3J1a3EwZWI0a20gaTdxZGpvbGZibjRtOTlzMmFic2JsMTJqOGtAZw&amp;tmsrc=i7qdjolfbn4m99s2absbl12j8k%40group.calendar.google.com">
+                    <div class="calendar-event-add-icon">
+                        <span class="iconify" data-inline="false" data-icon="mdi:calendar"></span>
+                        <span class="icon-text">
+                            <p><b>Add to Calendar</b></p>
+                        </span>
+                    </div>
+                </a>
+                <div class="event-contents">
+                    <img src="/static/images/resources-event-programming.svg" alt="Resume Workshop">
+                    <br>
+                    <br>
+                    <h4>Test Event 2</h4>
+                    <br>
+                    <div class="event-logistics">
+                        <p><span class="iconify" data-inline="false" data-icon="mdi:clock-time-eight"></span>7:00 PM EST</p>
+                        <p><span class="iconify" data-inline="false" data-icon="mdi:map-marker"></span>Comm Lawn</p>
+                    </div>
+                    <br>
+                    <p>Description of Resume Workshop</p>
+                </div>
+            </div>
+            <div class="calendar-event">
+                <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MXJka3Y0OWUxbzVpZDg3YWkzaTUwdGVrN2UgaTdxZGpvbGZibjRtOTlzMmFic2JsMTJqOGtAZw&amp;tmsrc=i7qdjolfbn4m99s2absbl12j8k%40group.calendar.google.com">
+                    <div class="calendar-event-add-icon">
+                        <span class="iconify" data-inline="false" data-icon="mdi:calendar"></span>
+                        <span class="icon-text">
+                            <p><b>Add to Calendar</b></p>
+                        </span>
+                    </div>
+                </a>
+                <div class="event-contents">
+                    <img src="/static/images/resources-event-speaker.svg" alt="Resume Workshop">
+                    <br>
+                    <br>
+                    <h4>Test Event 3</h4>
+                    <br>
+                    <div class="event-logistics">
+                        <p><span class="iconify" data-inline="false" data-icon="mdi:clock-time-eight"></span>5:00 PM EST</p>
+                        <p><span class="iconify" data-inline="false" data-icon="mdi:map-marker"></span>CILSE 100</p>
+                    </div>
+                    <br>
+                    <p>Description of Resume Workshop</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="add-whole-calendar-btn">
+            <button type="button" class="btn-blktored" onclick="location.href='https://calendar.google.com/calendar/u/3?cid=aTdxZGpvbGZibjRtOTlzMmFic2JsMTJqOGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ'">Add Full Calendar</button>
+        </div>
+    </section>
+
     <footer>
         <div class="social-icons footer-layer">
             <a href="https://www.facebook.com/csa.bu.397" class="icon">
