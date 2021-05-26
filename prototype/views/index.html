@@ -234,6 +234,24 @@
         </div>
     </section>
 
+    <section class="mailing-list">
+        <div class="mailing-list-flexbox rellax" data-rellax-speed="-3">
+            <h2>It's dangerous to do CS alone.</h2>
+            <br>
+            <h4>Join our mailing list!</h4>
+            <form name="mailing-list-form" action="/signup" method="POST" onsubmit="return formValidate()">
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+                <p class="full">
+                    <input type="email" name="email" id="message" placeholder="Email" cols="30" rows="10"></input>
+                </p>
+                <p class="full">
+                    <button type="submit" id="check" class="mailing-list-btn">Sign Up</button>
+                </p>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="social-icons footer-layer">
             <a href="https://www.facebook.com/csa.bu.397" class="icon">
@@ -298,11 +316,19 @@
             </a>
         </div>
     </footer>
+    
+    <!-- config file
+    <script type='text/javascript' src='/config.js'></script>
+    <script type='text/javascript' src='/contact.js'></script> -->
 
     <script src="/static/js/rellax.min.js"></script>
     <script src="/static/js/script.js"></script>
 
     <!-- iconify plugin -->
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <!-- form check -->
+    <script src="/static/js/formcheck.js"></script>
+
 </body>
 </html>

@@ -1,3 +1,5 @@
+// for index.html specifically
+
 .hero {
     position: relative;
     width: auto;
@@ -384,5 +386,87 @@
 @media (max-width: 1200px) {
     .clubs-right {
         display: none;
+    }
+}
+
+.mailing-list {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+    background-image: url(/static/images/mailing-list-background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: $white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailing-list form {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.mailing-list form input {
+    font-size: $p;
+    font-family: $karla;
+    width: 100%;
+    padding: 0.5rem;
+    outline: 0;
+    border-radius: 0.35rem;
+    border: #e2e2e2 solid 2px;
+}
+
+.mailing-list form input:focus {
+    border: $red solid 2px;
+}
+
+.mailing-list form button, .maiing-list form button:hover {
+    font-family: $karla;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    font-size: $p;
+    font-weight: 700;
+}
+
+.mailing-list form button {
+    background-color: $black;
+    border: none;
+    color: $white;
+    transition: all ease 200ms;
+    outline: 0;
+}
+
+.mailing-list button:hover, .mailing-list button:focus {
+    box-shadow: 0px 15px 35px rgba(26, 26, 26, 0.25);
+}
+
+.mailing-list button:active {
+    background-color: $red;
+    color: $white;
+}
+
+.mailing-list form .full {
+    grid-column: 1 / 3;
+}
+
+@media (max-width: 550px) {
+    .mailing-list {
+        h2 {
+            font-size: $h3;
+        }
+        h4 {
+            font-size: $p;
+        }
+        form input {
+            font-size: 14px;
+        }
     }
 }
