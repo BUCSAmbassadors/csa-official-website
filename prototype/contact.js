@@ -68,6 +68,10 @@ app.get('/fail.html', function(req,res) {
     res.render(__dirname+'/views/fail.html');
 });
 
+app.get('/clubs.html', function(req,res) {
+    res.render(__dirname+'/views/clubs.html');
+});
+
 app.use('/', router);
 
 // contactus form
@@ -103,7 +107,7 @@ app.post('/send', (req, res) => {
     // send mail with defined transport object
     let mailInfo = {
         from: '"Nodemailer Contact" <testrunnin@gmail.com>', // sender address
-        to: "RECEIVER EMAIL", // receiver -- set this to bucsa's email lol
+        to: "andyvo@bu.edu", // receiver -- set this to bucsa's email lol
         subject: "Node Contact Request", // Subject line
         text: "Hello world", // plain text body -- useless lol
         html: output // html body -- from above

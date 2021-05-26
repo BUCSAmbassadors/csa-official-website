@@ -54,6 +54,8 @@ This is really where things are stacked. I wanted to make sure as many requireme
 
 The next section deals with jobs. I just outlined a quick list schema of Data Science, SWE, and UX/UI jobs that should be very simple to integrate once you guys find jobs to list. Adding (or removing) categories should be straightforward as well. Lastly, the Useful Links section is the "LinkTree"-like aspect of the website. Spanning the whole page, I took inspiration off of a lot of other pages I've seen that makes it look resourceful.
 
+At the bottom in the LinkTree section, one of the links will bring the user to clubs.html, a list of all of the CS clubs from the Google Docs reference sheet.
+
 ### Contact Us Page
 
 The contact page is really just a contact card using Grid CSS. You have your contact info on the left (top in mobile) and a contact us form on the right (bottom in mobile). This page uses Node.js and the Express.js framework. Since I use a form that will be submitted as a post request, I used body-parser as a Node.js body parsing middleware. I also used Express Handlebars as a template viewing engine temporarily until I decided to render all of my HTML on the server side. Also used was nodemailer to send the request.

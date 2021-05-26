@@ -1,0 +1,40 @@
+.clubs-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    background-image: url(/static/images/clubs-landing.png);
+    background-color: $white;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* simple parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clubs-list {
+    padding: 5rem;
+    ul {
+        padding: 2rem;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    a {
+        color: $black;
+        transition: all ease 300ms;
+    }
+    a:hover, a:focus {
+        color: $red;
+        text-decoration: underline;
+    }
+}
