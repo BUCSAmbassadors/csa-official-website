@@ -2,6 +2,8 @@
 
 BU CS Ambassador's Web (Re)Design Challenge
 
+Demo video [here](https://youtu.be/HP6hkymmq28).
+
 ## The Challenge
 
 Boston University's Computer Science Ambassadors Club hosted a web design competition to redesign their entire website!
