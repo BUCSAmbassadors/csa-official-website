@@ -10,7 +10,6 @@ const router = express.Router();
 const { getMaxListeners } = require('process');
 const request = require('request');
 require('dotenv').config();
-
 const app = express();
 
 // View engine setup
@@ -94,8 +93,8 @@ app.post('/send', (req, res) => {
         port: 587, // 465 is ssl, 587 is tls
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'testrunnin@gmail.com', // my test gmail (sender)
-            pass: 'PASSWORD', // my test gmail password temporary (sender) -> prob wanna hide this
+            user: 'bucsambassadors@gmail.com', // csa gmail (sender)
+            pass: process.env.CSA_GMAIL_PASSWORD, // csa gmail password
             // make sure on gmail security to allow less secure app access
             // https://stackoverflow.com/questions/16512592/login-credentials-not-working-with-gmail-smtp
         },
@@ -106,8 +105,8 @@ app.post('/send', (req, res) => {
 
     // send mail with defined transport object
     let mailInfo = {
-        from: '"Nodemailer Contact" <testrunnin@gmail.com>', // sender address
-        to: "andyvo@bu.edu", // receiver -- set this to bucsa's email lol
+        from: '"Nodemailer Contact" <bucsambassadors@gmail.com>', // sender address
+        to: "bucsambassadors@gmail.com", // receiver
         subject: "Node Contact Request", // Subject line
         text: "Hello world", // plain text body -- useless lol
         html: output // html body -- from above
