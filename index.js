@@ -180,5 +180,5 @@ app.post('/signup', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log('App started on port http://localhost:${port}...');
+    console.log(`App started on port http://localhost:${port}...`);
 }); // currently hosting on localhost:3000
