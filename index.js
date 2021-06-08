@@ -11,6 +11,7 @@ const { getMaxListeners } = require('process');
 const request = require('request');
 require('dotenv').config();
 const app = express();
+let port = process.env.PORT || 3000;
 
 // View engine setup
 
@@ -178,4 +179,6 @@ app.post('/signup', (req, res) => {
     });
 });
 
-app.listen(3000, () => console.log('Server started...')); // currently hosting on localhost:3000
+app.listen(port, () => {
+    console.log('App started on port http://localhost:${port}...');
+}); // currently hosting on localhost:3000
