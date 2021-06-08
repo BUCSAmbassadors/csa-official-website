@@ -36,7 +36,7 @@ To read stuff from the .env file, be sure to install the dotenv package.
 npm install dotenv
 ```
 
-Be sure to check your Mailchimp's data center as well as list_id and API key. Instructions are found in the comments of contact.js (with a YouTube tutorial in the appropriate section).
+Be sure to check your Mailchimp's data center as well as list_id and API key. Instructions are found in the comments of index.js (with a YouTube tutorial in the appropriate section).
 
 ### Mentor Page
 
@@ -86,8 +86,8 @@ As a team of 3 (one developer + designer, two designers), it was pretty much a g
 
 ## The Specifics
 
-If this website is chosen, a few configurations will have to make the website work. First of all, the website is running on localhost:3000 so make sure to host it on the actual BUCSA website when that's running. Furthermore, you will find sections in the contact.js file that requires BUCSA-specific information (including email username and password as well as mailchimp information).
+If this website is chosen, a few configurations will have to make the website work. First of all, the website is running on localhost:3000 so make sure to host it on the actual BUCSA website when that's running. Furthermore, you will find sections in the index.js file that requires BUCSA-specific information (including email username and password as well as mailchimp information).
 
-If you happen to make a new page, you will have to add it to the node.js route path in contact.js in order for the server to render it on localhost:3000.
+If you happen to make a new page, you will have to add it to the node.js route path in index.js in order for the server to render it on localhost:3000.
 
 Other detail related things: upcoming events in the Resources page will have to be manually added in; same with jobs; pictures for the Ambassadors page will have to be collected because that was not provided; links to peoples' LinkedIns will have to be added into the ambassadors.html file.
