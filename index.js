@@ -108,7 +108,7 @@ app.post('/send', (req, res) => {
     let mailInfo = {
         from: '"Nodemailer Contact" <bucsambassadors@gmail.com>', // sender address
         to: "bucsambassadors@gmail.com", // receiver
-        subject: "Node Contact Request", // Subject line
+        subject: "Website Contact Request", // Subject line
         text: "Hello world", // plain text body -- useless lol
         html: output // html body -- from above
     };
