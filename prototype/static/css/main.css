@@ -387,7 +387,8 @@
   font-size: 36px;
 }
 
-@media (max-width: 1200px) {
+/* Adjust max-width from 1200px -> 1277px for Checkpoint 6 [MWAS] */
+@media (max-width: 1275px) {
   .clubs-right {
     display: none;
   }
