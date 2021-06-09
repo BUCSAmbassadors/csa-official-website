@@ -387,7 +387,7 @@
   font-size: 36px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1270px) {
   .clubs-right {
     display: none;
   }
