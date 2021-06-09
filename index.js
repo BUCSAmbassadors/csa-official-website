@@ -154,8 +154,7 @@ app.post('/signup', (req, res) => {
         // {lists_id} is found in the settings of your mailing list at the bottom -> just follow the tutorial
         // also I think mailchimp calls lists 'audiences' now
         // url: 'https://<dc>.api.mailchimp.com/3.0/lists/{lists_id}'
-        // url: 'https://us6.api.mailchimp.com/3.0/lists/d9b232d600',
-        url: `https://us6.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}`,
+        url: `https://us19.api.mailchimp.com/3.0/lists/${process.env.MAILCHIMP_LIST_ID}`,
         method: 'POST',
         headers: {
             // Authorization: 'auth MAILCHIMP_API_KEY'
