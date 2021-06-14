@@ -1,3 +1,7 @@
+// This file follows https://www.youtube.com/watch?v=dFaV95gS_0M in retrieving
+// a list of dictionary of events data using google cal api
+// run node googlecalendar.js in the terminal to see the results
+
 
 const {google} = require('googleapis');
 require('dotenv').config();

@@ -59,9 +59,12 @@
             <p>Pull out your calendars because we got some exciting upcoming events for you!</p>
         </div>
         <div class="resources-calendar">
-            <!-- Unfortunately, Google Calendar API was being a nuisance so I figured I'd hardcode in the UI for showing next 3 (or 5 up to y'all) upcoming events -->
-            <!-- Obv someone is going to have to check up on this -->
-            <!-- iframes google calendar looks ugly i understand -->
+            <!-- 
+                googlecalendar.js file retrieves the "CS ambassadors" calendar and display events within 1 year since moment they visit the website
+                STILL NEEDS TO BE DONE: import those data and replace the test events with actual events with the following information:
+                "Event Name", "Event Time", "Location", "Description", etc.
+                also edit "Add Full Calendar" link to be able to add all events to the user's google cal
+            -->
             <div class="calendar-event">
                 <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NXVhcmFlaG12aTE3ZnI2N21hMzl1MjRvN2EgaTdxZGpvbGZibjRtOTlzMmFic2JsMTJqOGtAZw&amp;tmsrc=i7qdjolfbn4m99s2absbl12j8k%40group.calendar.google.com">
                     <div class="calendar-event-add-icon">
