@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    min-height: 0;
+}
+
+body {
+    word-wrap: break-word;
+}
+
+h1 {
+    font-family: $rubik;
+    font-size: $h1;
+    font-weight: 700;
+}
+
+
+h2 {
+    font-family: $rubik;
+    font-size: $h2;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-family: $karla;
+    font-size: $h3;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: $karla;
+    font-size: $h4;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: $karla;
+    font-size: $h5;
+    font-weight: 400;
+}
+
+p {
+    font-family: $karla;
+    font-size: $p;
+    font-weight: 400;
+}
+
+li, a {
+    text-decoration: none;
+    font-size: $p;
+}
+
+button, button:hover {
+    font-family: $karla;
+    border-radius: 3rem;
+    padding: 1.6875rem 3rem;
+    font-size: $h3;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+}

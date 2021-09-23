@@ -1,0 +1,194 @@
+.resources-landing {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    padding: 5rem;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+    .resources-landing {
+        flex-direction: column;
+        .resources-landing-right {
+            display: none;
+        }
+    }
+}
+
+.resources-landing-left {
+    color: $black;
+    flex: 1;
+}
+
+.resources-landing-right {
+    flex: 1;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.resources-events {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+}
+
+.events-header {
+    margin-bottom: 2rem;
+}
+
+.resources-calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 1375px) {
+    .resources-calendar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.calendar-event-add-icon {
+    width: 44px;
+    height: 44px;
+    background-color: $red;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+    .iconify {
+        color: $white;
+        font-size: 30px;
+    }
+    .icon-text {
+        display: none;
+        color: none;
+        transition: all ease-in-out 1s;
+        transition-delay: 150ms;
+        white-space: pre;
+    }
+}
+
+.calendar-event-add-icon:hover, .calendar-event-add-icon:focus {
+    box-shadow: 0 0.25rem 0.5rem rgba(255, 4, 0, 0.35);
+    width: 240px;
+    display: flex;
+    gap: 10px;
+    .icon-text {
+        display: block;
+        color: $white;
+    }
+}
+
+.calendar-event {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 35px rgba(26, 26, 26, 0.15);
+    border-radius: 32px;
+    padding: 1rem;
+}
+
+.event-contents img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.event-logistics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .iconify {
+        display: inline-block;
+        font-size: 20px;
+        color: #2F2F2F;
+    }
+}
+
+.add-whole-calendar-btn {
+    .btn-blktored {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .resources-landing, .resources-events, .resources-jobs {
+        h2 {
+            font-size: $h3;
+        }
+    }
+}
+
+.resources-jobs {
+    padding: 5rem;
+}
+
+.jobs-text {
+    text-align: right;
+}
+
+.jobs-list {
+    ul {
+        padding: 2rem;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    a {
+        color: $black;
+        transition: all ease 300ms;
+    }
+    a:hover, a:focus {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+
+.resources-links-header {
+    padding: 5rem 5rem 2rem 5rem;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    border-bottom: 3px solid $black;
+}
+
+.resources-link-section {
+    padding: 2rem 5rem;
+    a {
+        color: $black;
+        transition: all ease 300ms;
+        .iconify {
+            color: $black;
+            padding-top: 8px;
+            display: inline;
+            font-size: $h4;
+            transition: all ease 300ms;
+        }
+    }
+    a:hover, a:focus {
+        color: $red;
+        .iconify {
+            color: $red;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boston University's Computer Science Ambassadors">
+    <meta name="keywords" content="BU, BUCSA, BU CSA, BU CS Ambassadors, Boston University, Boston University Computer Science">
+    <title>BU CS Ambassadors | Contact Us</title>
+
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&family=Rubik:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" sizes="32x32" href="./static/images/reg logo no background small.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="icon-bar">
+        <!-- https://css-tricks.com/simple-social-sharing-links/ -->
+        <!-- assuming link is https://www.bucsambassadors.bu.edu/ -->
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.bucsambassadors.bu.edu%2F" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.bucsambassadors.bu.edu%2F&text=Hey%21+BU+CS+Ambassadors+has+a+new+website%21+Take+a+look%21&hashtags=bostonuniversity,bucsambassadors" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="mailto:?subject=Check out this new website&amp;body=Hey! BU CS Ambassadors has a new website! Take a look at https://www.bucsambassadors.bu.edu." title="Share by Email" class="mail"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <!-- Graphic as link => Alt attribute indicates path [MWAS] -->
+            <img src="./static/images/reg logo no background small.png" alt="./views/index.html">
+        </a>
+        <nav>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="mentor.html" class="link">Mentorship</a></li>
+                <li><a href="ambassadors.html" class="link">Ambassadors</a></li>
+                <li><a href="clubs.html" class="link">Clubs</a></li>
+                <li><a href="./resources.html" class="link">Resources</a></li>
+                <li><a href="./contactus.html" class="link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h3 class="toptext">Have a Question? <span class="redtext">Contact Us</span></h3>
+        <!-- <h4 class="toptext">{{msg}}</h4> -->
+        <div class="contact-wrapper">
+            <div class="contact-about">
+                <h3 class="contact-about-text">Contact Info</h3>
+                <p class="contact-about-text">Fill up the form and an Ambassador will get back to you immediately!</p>
+                <ul class="contact-socials contact-about-text">
+                    <li><span class="iconify" data-inline="false" data-icon="mdi:email-outline"></span><a href="mailto:bucsambassadors@gmail.com">bucsambassadors@gmail.com</a></li>
+                </ul>
+                <div class="contact-icons">
+                    <a href="https://www.facebook.com/csa.bu.397" class="icon">
+                        <span class="iconify" data-inline="false" data-icon="mdi:facebook"></span>
+                    </a>
+                    <a href="https://twitter.com/BUCSAmbassadors" class="icon">
+                        <span class="iconify" data-inline="false" data-icon="mdi:twitter"></span>
+                    </a>
+                    <a href="https://www.instagram.com/bucsambassadors/" class="icon">
+                        <span class="iconify" data-inline="false" data-icon="mdi:instagram"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Email Us</h3>
+                <form method="POST" action="send">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="First & Last">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="To reach you">
+                    </p>
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" id="message" placeholder="Write your message..." cols="30" rows="10"></textarea>
+                    </p>
+                    <p class="full">
+                        <button type="submit" class="contact-submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons footer-layer">
+            <a href="https://www.facebook.com/csa.bu.397" class="icon">
+                <span class="iconify" data-inline="false" data-icon="mdi:facebook"></span>
+            </a>
+            <a href="https://twitter.com/BUCSAmbassadors" class="icon">
+                <span class="iconify" data-inline="false" data-icon="mdi:twitter"></span>
+            </a>
+            <a href="https://www.instagram.com/bucsambassadors/" class="icon">
+                <span class="iconify" data-inline="false" data-icon="mdi:instagram"></span>
+            </a>
+        </div>
+        <div class="footer-information footer-layer">
+            <div class="info">
+                <a href="https://www.bu.edu/cs/" target="_blank">
+                    <p><b>Boston University</b> Arts & Sciences
+                    <br>
+                    Department of Computer Science
+                </a>
+                <br>
+                111 Cummington Mall, Boston, MA 02215
+                <br>
+                phone: (617)353-8919; email: <a href="mailto:cs@bu.edu">cs@bu.edu</a></p>
+            </div>
+            <div class="info">
+                <a href="./index.html">
+                    <p><b>Boston University</b>
+                    <br>
+                    Computer Science Ambassadors
+                </a>
+                <br>
+                111 Cummington Mall, Boston, MA 02215
+                <br>
+                email: <a href="mailto:bucsambassadors@gmail.com">bucsambassadors@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-links footer-layer">
+            <div class="footer-indiv-link">
+                <a href="https://www.bu.edu/copyright/" target="_blank">
+                    <p><b>© 2021 Trustees of Boston University</b></p>
+                </a>
+            </div>
+            <div class="footer-indiv-link">
+                <a href="https://www.bu.edu/policies/digital-privacy-statement/" target="_blank">
+                    <p><b>Privacy Statement</b></p>
+                </a>
+            </div>
+            <div class="footer-indiv-link">
+                <a href="https://www.bu.edu/disability/" target="_blank">
+                    <p><b>Accessibility</b></p>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bucsa footer-layer">
+            <a href="./index.html">
+                <p><b>© 2021 Boston University Computer Science Ambassadors</b></p>
+            </a>
+        </div>
+        <div class="footer-bu footer-layer">
+            <a href="https://www.bu.edu/" target="_blank">
+                <!-- Graphic as link => Alt attribute indicates path [MWAS] -->
+                <img src="./static/images/BU-logo.png" alt="https://www.bu.edu/">
+            </a>
+        </div>
+    </footer>
+
+    <!-- iconify plugin -->
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>
